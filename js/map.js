@@ -55,14 +55,38 @@ var customBuild = function(data) {
 		var lng = data[i].lng;
 		var txt = data[i].Summary;
 		var outcome = data[i]['Hit or Killed?'];
-		var circle = new L.circleMarker([lat, lng], 3);
-		circle.bindPopup(txt);
+
+		//WORKS HELLA YO
+		// var circle;
 		// if (outcome == 'Killed') {
-		// 	circle.css('fill', 'red');
+		// 	circle = new L.circleMarker([lat, lng], {
+		// 		radius: 7,
+		// 		fillColor: "red",
+		// 		fillOpacity: 0.3,
+		// 		color: "darkred",
+		// 		opacity: 0.5
+		// 	});
 		// } else {
-		// 	circle.attr('fill', 'black');
+		// 	circle = new L.circleMarker([lat, lng], {
+		// 		radius: 7,
+		// 		fillColor: "darkgray",
+		// 		fillOpacity: 0.3,
+		// 		color: "black",
+		// 		opacity: 0.5
+		// 	});
 		// }
 
+		// MAKES MORE INTUITIVE SENSE, BUT NOT WORKING
+		// var circle = new L.circleMarker([lat, lng], {
+		// 	radius: 7,
+		// 	fillOpacity: 0.3,
+		// 	opacity: 0.5,
+		// 	className: outcome
+		// });
+		// $('.Killed').setStyle('fillColor', 'red').setStyle('color', 'darkred');
+		// $('.Hit').setStyle('fillColor', 'darkgray').setStyle('color', 'black');
+
+		circle.bindPopup(txt);
 
 		if(race == 'White') {
 			circle.addTo(white);
