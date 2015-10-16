@@ -2,3 +2,37 @@
 #container {
 	height:800px;
 }
+
+h1, .heading, span{
+	font-weight: bold;
+}
+
+#table tr:nth-child(even){
+	background-color: lightgray;
+}
+
+body {
+	text-align: center;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h2, #mapInfo {
+	font-style: italic;
+}
+
+p {
+	color: gray;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#hit {
+	color: darkgray;
+}
+
+#killed {
+ 	color: red;
+}
