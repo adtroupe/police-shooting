@@ -22,22 +22,22 @@
    
   </head>
   <body>
-    <!-- You may want to put your title and additional informaiton here -->
     <div class="container">
       <h1>Police Shooting in America</h1>
       <h2>A Crowdsourced Project</h2>
       <p>
         In an effort to raise public awareness, <a href="http://regressing.deadspin.com/deadspin-police-shooting-database-update-were-still-go-1627414202" target="_blank">Deadspin</a> set up a crowdsourced solution to document and track police-shootings across the United States. 
       </p>
+      <!-- This is the div the cross-tabulation is in. -->
       <div class="container" id="table"></div>
-      <!-- This is the div that your map will go in.  You'll need to reference its id -->
+      <!-- This is the div the map is in. -->
       <p id="mapInfo">
         Circle color indicates if the vicim was <span id="hit">hit</span> or <span id="killed">killed</span>. Click each point for additional details.
       </p>
       <div id="container"></div>
     </div>
     <script>
-      // This is where you should execute your drawMap function
+      // This executes the drawMap function in map.js
       drawMap()
     </script>
   </body>

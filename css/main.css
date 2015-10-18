@@ -11,8 +11,12 @@ h1, .heading, span{
 	background-color: lightgray;
 }
 
-body {
+h1, h2, p, #table {
 	text-align: center;
+}
+
+h1, h2 {
+	font-family: 'Courier New', Arial, sans-serif;
 }
 
 h2 {
